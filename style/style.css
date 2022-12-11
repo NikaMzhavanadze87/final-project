@@ -315,8 +315,20 @@ li.active::after{
     background-size: cover;
     padding-top: 152px;
     padding-bottom: 120px;
+    position: relative;
+    isolation: isolate;
+}
+.contact-section::after{
+    content: "";
+    position: absolute;
+    background: #000000;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.71;
+
 }
 .form-container{
+    position: relative;
     max-width: 906px;
     margin: 0 auto;
 }
@@ -370,7 +382,7 @@ li.active::after{
     outline: none;
     height: 110px;
 }
-button{
+.btn{
     background: transparent;
     border: 2px solid #E93656;
     padding: 16px 46px;
@@ -379,10 +391,47 @@ button{
     cursor: pointer;
     transition: all .4s ease;
 }
-button:hover{
+.btn:hover{
     color: #FFFFFF;
     background: #E93656;
 }
+
+.modal{
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    margin: 0 auto;
+    z-index: 2;
+    background-color: #15263E;
+    inset: 0;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+  }
+  .modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-content p{
+    color: #DDDDDD;
+    font-size: 30px;
+  }
+  .modal-content .close{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    width: 180px;
+    color: #E93656;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  
+  
 @keyframes hide{
     0%{
         opacity: 1;
@@ -456,7 +505,6 @@ button:hover{
     .icon{
         width: 29px;
         height: 29px;
-        
     }
 }
 @media only screen and (max-width: 840px){
@@ -474,7 +522,6 @@ button:hover{
     .logoo{
         color: #1C1C1C;
         font-size: 80px;
-        
         padding: 50px;
     }
     .grid-container{
@@ -491,7 +538,6 @@ button:hover{
     .info-grid-b,.info-grid{
         max-width: 100%;
         justify-self: unset;
-        
     }
     .info-grid h5,.info-grid-b h5,.info-grid-c h5{
         margin-top: 44px;
@@ -509,9 +555,6 @@ button:hover{
         font-size: 40px;
         color: #1C1C1C;
     }
-
-   
-    
     .form{
         width: 100%;
         padding: 0 16px;

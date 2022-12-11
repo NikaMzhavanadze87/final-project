@@ -185,25 +185,31 @@
             <form class="form">
                 <div class="input-form">
                     <div class="input">
-                        <input type="text" id="your-name" placeholder="Your Name" required>
+                        <input type="text" class="fname" id="your-name" placeholder="Your Name" required>
                     </div>
                     <div class="input">
-                        <input type="email" id="email" placeholder="Email Address" required>
+                        <input type="text" class="mail" id="email" placeholder="Email Address" required>
                     </div>
                     <div class="input">
-                        <input type="text" name="url" id="url" placeholder="Your Website" required>
+                        <input type="text" class="web" id="url" placeholder="Your Website" required>
                     </div>
                 </div>
                 <div class="inner-msg">
                     <div class="msg">
-                        <textarea id="message" placeholder="Message"></textarea>
+                        <textarea class="txtmsg" id="message" placeholder="Message"></textarea>
                     </div>
                 </div>
-                <button type="submit">
+                <button type="submit" class="btn">
                     SEND MESSAGE
                 </button>
 
             </form>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p>Thank you for getting in touch! We appreciate you contacting us.</p>
+                    <button class="close">close</button>
+                </div>
+            </div>
         </div>
     </section>
     <script src="app.js"></script>

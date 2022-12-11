@@ -34,23 +34,47 @@ sideMenu.addEventListener("click",(e)=>{
             else{
                 pic.classList.add("hide");
             }
-        })
+        })  
     }
 });
 //--------------------------
 const url ="https://borjomi.loremipsum.ge/api/send-message";
 const formEl = document.querySelector(".form");
+const fullName = document.getElementById("your-name");
+const mailData = document.getElementById("email");
+const webPage = document.getElementById("url");
+const textMessage = document.getElementById("message");
+const modal = document.getElementById("myModal");
+const close = document.querySelector(".close");
+let checkError = function(response){
+    if(!response.ok){
+        const errorText = `There is an error "${response.status} ${response.statusText} ${response.url}"`
+        throw new Error(errorText);
+    }
+    return response;
+}
 formEl.addEventListener("submit",(e) =>{
     e.preventDefault();
-    
     fetch(url,{
         method:"POST",
         headers:{
-            "Content-Type":"application/json"
+            "Content-Type": "application/json"
         },
-        body:JSON.stringify()
+        body:JSON.stringify({
+            name:fullName.value,
+            email:mailData.value,
+            website:mailData.value,
+            message:textMessage.value
+        })
     })
+    .then(checkError)
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data =>{
+        modal.style.display = "flex";
+    })
     .catch(error => console.log(error));
+    formEl.reset();
 });
+close.onclick = function(){
+    modal.style.display = "none";
+}
