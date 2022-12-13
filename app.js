@@ -17,7 +17,26 @@ function nextSlide() {
 	}
     renderSliders();
 }
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 5000);
+//------------------------
+const button = document.querySelector(".dot-container");
+const slide = document.querySelectorAll(".testimonial-slide");
+button.addEventListener("click",(e) =>{
+    if(e.target.classList.contains("btn-dot")){
+        button.querySelector(".btn-active").classList.remove("btn-active");
+        e.target.classList.add("btn-active");
+        const buttonValue = e.target.getAttribute("data-dotValue");
+        slide.forEach(slide =>{
+            if(slide.getAttribute("data-slideitem") === buttonValue){
+                slide.classList.add("testimonial-active");
+            
+            }
+            else{
+                slide.classList.remove("testimonial-active");
+            }
+        })
+    }
+})
 // -----------------------
 const sideMenu = document.querySelector(".side-ul");
 const projPictures = document.querySelectorAll(".proj-pic");
