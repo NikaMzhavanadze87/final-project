@@ -206,6 +206,43 @@ span{
     font-size: 20px;
     margin-top: 23px;
 }
+.servise-section{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    grid-auto-rows: 360px 360px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.servise-box {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px #c7c1c1;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.servise-box img{
+    
+    width: 60px;
+    height: 60px;
+    
+    
+}
+.servise-box h3{
+    color:#222222;
+    font-size: 22px;
+    margin-top: 15px;
+}
 .icontainer{
     max-width: 1920px;
     width: 100%;
