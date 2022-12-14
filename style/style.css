@@ -201,10 +201,34 @@ span{
     min-width: 430px;
     min-height: 603px;
 }
-.stats span{
+.percentage-title{
+    margin-top: 23px;
+}
+.percentage-title span{
     color: #555555;
     font-size: 20px;
-    margin-top: 23px;
+}
+.load-container{
+    width: 300px;
+    height: 9px;
+    background-color:#F0F0F0;
+    margin-top: 15px;
+}
+.loaded-percent-1,.loaded-percent-2,.loaded-percent-3,.loaded-percent-4{
+    height: 100%;
+    background-color: #E93656;
+}
+.loaded-percent-1{
+    width: 256px;
+}
+.loaded-percent-2{
+    width: 191px;
+}
+.loaded-percent-3{
+    width: 151px;
+}
+.loaded-percent-4{
+    width: 76px;
 }
 .servise-section{
     max-width: 1920px;
@@ -219,7 +243,6 @@ span{
     align-items: center;
     gap: 10px;
 }
-
 .servise-box {
     background-color: #FAFAFA;
     display: flex;
@@ -232,11 +255,8 @@ span{
     height: 100%;
 }
 .servise-box img{
-    
     width: 60px;
     height: 60px;
-    
-    
 }
 .servise-box h3{
     color:#222222;
@@ -284,26 +304,6 @@ span{
 .sp{
     margin-top: 4px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .testimonial-section{
     max-width: 1920px;
     margin: 0 auto;
@@ -657,13 +657,6 @@ li.active::after{
 	font-size: 13px;
 	margin-top: 16px;
 }
-
-
-
-
-
-
-
 .contact-section{
     max-width: 1920px;
     width: 100%;
@@ -807,6 +800,11 @@ li.active::after{
     }
 }
 @media only screen and (max-width: 1440px) {
+    .servise-section{
+        display: grid;
+        grid-template-columns: repeat(4, 225px);
+        grid-auto-rows: 300px 300px;
+    }
     .project-grid{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -978,6 +976,13 @@ li.active::after{
     .testimonial-container{
         display: none;
     }
+    .servise-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
    
     
     
