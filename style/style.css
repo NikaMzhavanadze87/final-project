@@ -141,8 +141,7 @@ span{
 }
 .personal-page{
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 70px;
     justify-content: center;
     align-items: center;
@@ -222,10 +221,9 @@ span{
     background-size: cover;
 }
 .contac-info-personal{
-    max-width: 981px;
+    
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 41px;
@@ -271,11 +269,9 @@ span{
 
 .testimonial-section{
     max-width: 1920px;
-    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #15263E;
     background-image: url("../img/countdown-bg.png");
     background-position: center;
@@ -283,13 +279,13 @@ span{
     padding-top: 150px;
     padding-bottom: 150px;
     position: relative;
-    isolation: isolate;
+    
 }
 
 .testimonial-container{
     display: grid;
     max-width: 1120px;
-    grid-template-columns: 1100px 33px;
+    grid-template-columns: 1087px 33px;
     justify-content: center;
     align-items: center;
     
@@ -297,12 +293,13 @@ span{
 .testimonial-slider{
     display: flex;
     position: relative;
-    max-width: 1120px;
+    max-width: 1087px;
     height: 170px;
 }
 .testimonial-slide{
     position: absolute;
     display: none;
+    grid-template-columns: 497px auto 170px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -316,7 +313,6 @@ span{
 }
 .testimonial-active{
     display: grid;
-    grid-template-columns: 497px auto 170px;
     gap: 50px;
 	width: 100%;
 	opacity: 1;
@@ -431,7 +427,7 @@ li.active::after{
 .project-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 221px 221px;
+    grid-template-rows: 350px 350px;
     gap: 3px;
     
 }
@@ -774,6 +770,13 @@ li.active::after{
     }
 }
 @media only screen and (max-width: 1440px) {
+    .project-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 221px 221px;
+        gap: 3px;
+        
+    }
     .info-grid{
         max-width: 600px;
         display: flex;
@@ -896,6 +899,51 @@ li.active::after{
     .form .input > input{
         width: 100%;
     }
+    .contac-info-personal{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .personal-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bio{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 30pxpx;
+        padding-left:unset;
+    }
+    .stats{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .designer{
+        width: 100%;
+        padding: 20px;
+    }
+    .designer img{
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .latest-projects{
+        display: none;
+    }
+    .testimonial-container{
+        display: none;
+    }
+   
+    
     
     
 }
+
