@@ -134,17 +134,122 @@ span{
     object-fit: cover;
 }
 .personal-page-section{
-    padding: 135px 10px;
+    padding-top: 135px;
     max-width: 1920px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 .personal-page{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    gap: 20px;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
 }
+.bio{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    
+    padding-top: 83px;
+    padding-left: 50px;
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+}
+.bio h2{
+    color: #222222;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.bio span{
+    color: #DAAE19;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.bio p{
+    color: #555555;
+    font-size: 15px;
+    margin-top: 33px;
+    max-width: 334px;
+    min-width: 230px;
+    text-align: right;
+    padding:0;
+}
+.hire{
+    background-color: #E93656;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    padding: 15px 50px;
+    margin-top: 60px;
+    transition: color .4 ease;
+    cursor: pointer;
+    border: none;
+}
+.hire:hover{
+    color: #222222;
+}
+.designer img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.designer{
+    min-width: 430px;
+    min-height: 603px;
+}
+.stats span{
+    color: #555555;
+    font-size: 20px;
+    margin-top: 23px;
+}
+.icontainer{
+    max-width: 1920px;
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #15263E;
+    background-image: url(../img/countdown-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.contac-info-personal{
+    max-width: 981px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+}
+.ppfiinfo{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.ppfiinfo h3{
+    color: #DFDFDF;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.ppfiinfo p{
+    color: #DFDFDF;
+    font-size: 14px;
+}
+.sp{
+    margin-top: 4px;
+}
+
 
 
 
@@ -175,8 +280,8 @@ span{
     background-image: url("../img/countdown-bg.png");
     background-position: center;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     position: relative;
     isolation: isolate;
 }
