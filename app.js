@@ -19,6 +19,26 @@ function nextSlide() {
 }
 setInterval(nextSlide, 5000);
 //------------------------
+const statistics = document.querySelector(".stats")
+const whenToAppear = {
+    threshold:1,
+    
+};
+const showOnScroll = new IntersectionObserver(function(entries,showOnScroll){
+    entries.forEach(entry =>{
+        if(!entry.isIntersecting){
+            return;
+        }else{
+            entry.target.classList.add("show-stat")
+            showOnScroll.unobserve(entry.target);
+        }
+    })
+},whenToAppear);
+showOnScroll.observe(statistics);
+
+
+
+//------------------------
 const button = document.querySelector(".dot-container");
 const slide = document.querySelectorAll(".testimonial-slide");
 button.addEventListener("click",(e) =>{
@@ -29,7 +49,6 @@ button.addEventListener("click",(e) =>{
         slide.forEach(slide =>{
             if(slide.getAttribute("data-slideitem") === buttonValue){
                 slide.classList.add("testimonial-active");
-            
             }
             else{
                 slide.classList.remove("testimonial-active");
