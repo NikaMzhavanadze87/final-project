@@ -16,24 +16,32 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .greet{
     font-size: 50px;
+    color: #212121;
+    font-family: 'Glacial Indifference-regular';
 }
 .name{
     font-size: 71px;
+    color: #212121;
+    font-family: 'Glacial Indifference-bold';
+    font-weight: bold;
 }
 .company{
+    font-family:'Glacial Indifference-regular';
     font-size: 23px;
+    color: #212121
 }
 .container{
     position: relative;
     display: flex;
     justify-content: space-between;
     max-width: 1920px;
-    width: 95%;
+    width: 90%;
     margin:0 auto;
 }
 .logoo{
     color: #1C1C1C;
     font-size: 40px;
+    font-family: 'poppins-extrabold';
     align-self: start;
     padding-top: 20px;
 }
@@ -45,19 +53,24 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .page-ab{
     padding-top: 25px;
+    width: 227px;
+    position: relative;
 }
 .page{
     font-size: 158px;
     align-self: center;
-    position: relative;
     color: #1C1C1C;
+    font-family: 'poppins-extrabold';
+    margin-left: 30px;
 }
 .ab-me{
     position: absolute;
     font-size: 43px;
     color: #373737;
-    top: 90px;
-    right: 5px;
+    top: 110px;
+    right:0;
+    font-family:'poppins-extrabold';
+    align-self: center;
 }
 .slider-section{
     background-color: #DDDDDD;
@@ -97,6 +110,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 .setisfection,span{
     font-size: 24px;
+    font-family: 'montserrat-bold';
 }
 span{
     color: #E93656;
@@ -150,7 +164,6 @@ span{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: end;
-    
     padding-top: 83px;
     padding-left: 50px;
 }
@@ -163,15 +176,18 @@ span{
     color: #222222;
     font-size: 40px;
     text-transform: capitalize;
+    font-family: 'Glacial Indifference-bold';
 }
 .bio span{
     color: #DAAE19;
     font-size: 14px;
     text-transform: uppercase;
+    font-family: 'Muli';
 }
 .bio p{
     color: #555555;
     font-size: 15px;
+    font-family: 'Muli-regular';
     margin-top: 33px;
     max-width: 334px;
     min-width: 230px;
@@ -182,6 +198,7 @@ span{
     background-color: #E93656;
     color: hsl(0, 0%, 100%);
     font-size: 15px;
+    font-family: 'Glacial Indifference-bold';
     padding: 15px 50px;
     margin-top: 60px;
     transition: color .4 ease;
@@ -207,6 +224,7 @@ span{
 .percentage-title span{
     color: #555555;
     font-size: 20px;
+    font-family: 'Glacial Indifference-bold';
 }
 .load-container{
     width: 300px;
@@ -262,6 +280,7 @@ span{
     color:#222222;
     font-size: 22px;
     margin-top: 15px;
+    font-family: 'Glacial Indifference-bold';
 }
 .icontainer{
     max-width: 1920px;
@@ -296,10 +315,12 @@ span{
     color: #DFDFDF;
     font-size: 25px;
     margin-bottom: 15px;
+    font-family: 'Glacial Indifference-bold';
 }
 .ppfiinfo p{
     color: #DFDFDF;
     font-size: 14px;
+    font-family: 'Muli';
 }
 .sp{
     margin-top: 4px;
@@ -371,15 +392,18 @@ span{
     font-size: 15px;
     letter-spacing: 0.45px;
     line-height: 30px;
+    font-family:'Roboto-light';
 }
 .column span{
     color: #E93656;
     font-size: 13px;
     margin-top: 38px;
+    font-family: 'Roboto-regular';
 }
 .column h2{
     color: white;
     font-size: 28px;
+    font-family: 'Glacial Indifference-bold';
 }
 .border{
     display: flex;
@@ -417,6 +441,7 @@ span{
 .title-projects h2{
     font-size: 70px;
     color: #2E2E2E;
+    font-family: 'Glacial Indifference-bold';
 }
 .latest-projects{
     display: grid;
@@ -438,6 +463,7 @@ span{
 .side-ul li{
     color: #FFFFFF;
     font-size: 20px;
+    font-family: 'Glacial Indifference-bold';
     cursor: pointer;
     position: relative;
 }
@@ -495,6 +521,7 @@ li.active::after{
    background-color: hsl(215, 49%, 16%);
    writing-mode: vertical-lr;
    font-size: 28px;
+   font-family: 'Glacial Indifference-bold';
    color: #E93656;
 }
 .item-box{
@@ -541,6 +568,7 @@ li.active::after{
     margin-top: 64px;
     margin-bottom: 5px;
     font-size: 14px;
+    font-family: 'Muli';
     color: #888888;
 }
 
@@ -548,14 +576,14 @@ li.active::after{
     line-height: 1.8rem;
     margin-top: 29px;
     font-size: 16px;
+    font-family: 'Muli';
     color: #494949;
 }
-
 .info-grid h2,.info-grid-b h2,.info-grid-c h2{
     font-size: 40px;
     color: #1C1C1C;
+    font-family: 'Glacial Indifference-bold';
 }
-
 .item:nth-of-type(1){
     justify-self: end;
 }
@@ -579,6 +607,19 @@ li.active::after{
 .sss{
     max-width: 1920px;
     margin: 0 auto;
+    padding-top: 170px;
+    text-align: center;
+}
+.sss p{
+    font-size: 13px;
+    color: #2ED279;
+    font-family: 'Glacial Indifference-bold';
+}
+.sss h2{
+    font-size: 70px;
+    color: #2E2E2E;
+    font-family: 'Glacial Indifference-bold';
+    margin-bottom: 79px;
 }
 .rosa-section{
     max-width: 1920px;
@@ -594,10 +635,12 @@ li.active::after{
 .rosa-section h2{
     color:#262526;
     font-size: 70px;
+    font-family: 'Glacial Indifference-bold';
 }
 .rosa-section p{
     color: #2ED279;
     font-size: 14px;
+    font-family: 'Glacial Indifference-bold';
 }
 .rosa-grid-container{
     display: grid;
@@ -649,12 +692,13 @@ li.active::after{
 .img-overlay h2 {
     text-transform: uppercase;
 	font-size: 16px;
-    font-weight: bold;
+    font-family: 'Poppins-semibold';
 	color: #161616;
 }
 .img-overlay p {
     color: #626262;
 	font-size: 13px;
+    font-family: 'Roboto-light';
 	margin-top: 16px;
 }
 .contact-section{
@@ -687,15 +731,22 @@ li.active::after{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    font-family: 'Jaapokki-regular',sans-serif;
     margin-bottom: 12px;
     font-size: clamp(12px, 35px, 45px);
 }
 .form-container p{
     text-align: center;
     color:#EEEEEE;
+    font-family: 'Roboto-light';
     margin-bottom: 46px;
     letter-spacing: 2px;
     font-size: clamp(8px, 12px, 17px);
+}
+::placeholder{
+    color: #515151;
+    font-size: 10px;
+    font-family: 'Poppins-semibold';
 }
 .form{
     display: flex;
@@ -739,6 +790,7 @@ li.active::after{
     padding: 16px 46px;
     color: #E93656;
     font-size: 12px;
+    font-family: 'Glacial Indifference-bold';
     cursor: pointer;
     transition: all .4s ease;
 }
@@ -769,6 +821,7 @@ li.active::after{
   .modal-content p{
     color: #DDDDDD;
     font-size: 30px;
+    font-family: 'Jaapokki-regular';
   }
   .modal-content .close{
     text-transform: uppercase;
@@ -776,9 +829,59 @@ li.active::after{
     width: 180px;
     color: #E93656;
     font-size: 12px;
+    font-family: 'Jaapokki-regular';
     padding: 10px 20px;
     margin-top: 20px;
     cursor: pointer;
+  }
+  footer{
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+  }
+  .footer-main{
+    max-width: 613px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 56px;
+    background-color: #282828;
+  }
+  .footer-footer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #171717;
+    padding: 36px;
+  }
+  .footer-main h2{
+    font-size: 55px;
+    font-family: 'Poppins-extrabold';
+    color: #FFFFFF;
+  }
+  .footer-main P{
+    margin-top: 22px;
+    color: #A5A5A5;
+    font-size: 17px;
+    font-family: 'Roboto-regular';
+  }
+  .footer-main span{
+    font-size: 55px;
+    font-family: 'Poppins-extrabold';
+    color: #E93656;
+  }
+  .footer-footer p{
+    font-size: 15px;
+    font-family: 'Muli';
+    color: #A0A8B7;
   }
   
   
