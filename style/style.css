@@ -256,26 +256,29 @@ span{
 .loaded-percent-4{
     width: 76px;
 }
-.personal-social-flex img{
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    cursor: pointer;
-}
 .personal-social-flex{
     display: flex;
     margin-top: 78px;
     gap: 10px;
 }
-.personal-social-flex div{
+.personal-social-flex a{
     justify-content: center;
     align-items: center;
     display: flex;
     width: 70px;
     height: 70px;
+    transition: all .4s ease-in;
+    border-radius: 5px;
 }
-.personal-social-flex div:hover{
+.personal-social-flex a:hover .fa-brands{
+    color: white;
+}
+.personal-social-flex a:hover{
     background-color: #15263E;
+}
+.personal-social-flex .fa-brands{
+    color: #363436;
+    font-size: 40px;
 }
 .servise-section{
     max-width: 1920px;
@@ -560,7 +563,6 @@ li.active::after{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 350px 350px;
     gap: 3px;
-    
 }
 .project-grid img{
     width: 100%;
@@ -569,8 +571,8 @@ li.active::after{
 }
 .proj-pic{
     position: relative;
+    cursor: pointer;
 }
-
 .show{
     animation: show .5s ease 0s 1 forwards;
     transform-origin: center;
@@ -738,7 +740,6 @@ li.active::after{
     color: #2E2E2E;
     font-family: 'Glacial Indifference-bold';
     margin-bottom: 79px;
-    
 }
 .rosa-section{
     max-width: 1920px;
@@ -840,7 +841,6 @@ li.active::after{
     inset: 0;
     z-index: -1;
     opacity: 0.71;
-
 }
 .form-container{
     position: relative;
@@ -872,12 +872,10 @@ li.active::after{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     max-width: 890px;
 }
 .input-form{
     display: flex;
-    
     width: 100%;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -887,7 +885,6 @@ li.active::after{
     margin-bottom: 30px;
 }
 .input > input{
-    
     border: 0;
     width: 290px;
     padding: 18px 30px;
@@ -1003,9 +1000,20 @@ li.active::after{
     font-family: 'Muli';
     color: #A0A8B7;
   }
-  
-   
-  
+  .footer-icons{
+    display: flex;
+    margin-top: 78px;
+    gap: 20px;
+  }
+  .footer-icons a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .footer-icons .fa-brands{
+    color: #00BEC5;
+    font-size: 20px;
+  }
 @keyframes hide{
     0%{
         opacity: 1;

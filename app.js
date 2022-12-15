@@ -17,7 +17,7 @@ function nextSlide() {
 	}
     renderSliders();
 }
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 4000);
 //------------------------
 const statistics = document.querySelector(".stats")
 const whenToAppear = {
@@ -35,9 +35,6 @@ const showOnScroll = new IntersectionObserver(function(entries,showOnScroll){
     })
 },whenToAppear);
 showOnScroll.observe(statistics);
-
-
-
 //------------------------
 const button = document.querySelector(".dot-container");
 const slide = document.querySelectorAll(".testimonial-slide");
