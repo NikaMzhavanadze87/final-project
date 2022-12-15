@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Avenir LT Std';
 }
-p,h1,h2,h3,h4,h5,h6{
+p,h1,h2,h3,h4,h5,h6,a{
     padding: 0;
     margin: 0;
 }
@@ -255,6 +255,27 @@ span{
 }
 .loaded-percent-4{
     width: 76px;
+}
+.personal-social-flex img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.personal-social-flex{
+    display: flex;
+    margin-top: 78px;
+    gap: 10px;
+}
+.personal-social-flex div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+.personal-social-flex div:hover{
+    background-color: #15263E;
 }
 .servise-section{
     max-width: 1920px;
